@@ -31,14 +31,14 @@ print(colorText(cont))
 
 
 cv = input('CV FILE: ')
-input('JOB DESCRIPTION FILE: ')
+job = input('JOB DESCRIPTION FILE: ')
 print('\nExtracting Data From CV..')
 
 #---------------------HEADERS FINISHED-----------------------------
 
 
 print('Extracting Job Description Data..\n')
-with open('job.txt') as f:
+with open(job) as f:
     job_desc = f.read()
 job_desc = job_desc.split('\n')
 
